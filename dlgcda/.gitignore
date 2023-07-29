@@ -1,0 +1,6 @@
+.vscode
+.idea
+__pycache__
+
+# 格式化文件
+dlgcda/data/format.py

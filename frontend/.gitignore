@@ -1,0 +1,7 @@
+node_modules
+dist
+.vscode
+.idea
+
+# 打包生成图
+analysis-chart.html

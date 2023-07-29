@@ -1,0 +1,5 @@
+__pycache__
+
+# # data文件夹下存放数据内容
+data/*
+!data/.gitkeep
