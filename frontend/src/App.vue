@@ -55,7 +55,8 @@
             class="ml-5" />
         </a-form-item>
         <a-form-item label="改变概率">
-          <a-slider v-model:value="formSettings.changeRate" :min="0.1" :max="0.9" :step="0.1" class="ml-5" />
+          <a-slider v-model:value="formSettings.changeRate" :min="0.1" :max="0.9" :step="0.1"
+            :disabled="formSettings.enable ? false : true" class="ml-5" />
         </a-form-item>
       </a-form>
       <a-divider />

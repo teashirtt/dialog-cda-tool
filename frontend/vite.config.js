@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import Unocss from 'unocss/vite'
 import { presetUno, presetAttributify } from 'unocss'
 import { visualizer } from 'rollup-plugin-visualizer'
+import viteCompression from 'vite-plugin-compression'
 
 export default defineConfig({
   server: {
@@ -28,6 +29,9 @@ export default defineConfig({
       emitFile: false,
       filename: 'analysis-chart.html',
       open: true
+    }),
+    viteCompression({
+      threshold: 512000
     })
   ]
 })
